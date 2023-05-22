@@ -21,7 +21,7 @@ export default function Header() {
        <nav className="navbar justify-content-start sticky-top" style={{ "backgroundColor": "#000C66" }}>
        <Link to="/" className="nav-link"><img src="header-logo.jpg" className="ml-3" width="60px" height="50px" /></Link>
          <Link to="#" className="nav-link text-white">GAMES</Link>
-         <Link to="/profile" className="nav-link text-white">ACCOUNT</Link>
+         <Link to="/profile" className="nav-link text-white"> PROFILE </Link>
          <Link to="/about" className="nav-link text-white">ABOUT US</Link>
        </nav>
       <Outlet />
