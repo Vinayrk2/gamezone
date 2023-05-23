@@ -12,7 +12,7 @@ export default function Card() {
         
         return (
           
-        <div className="card col-md-4" key={val.id} style={{"maxWidth":"340px"}}>
+        <div className="card col-md-4" key={val.id} >
           <img src={val.image} alt="" className="card-img-top mt-2 w-100" height="250px"/>
           <div className="card-body">
             <div className="card-title text-center" style={{"textTransform":"uppercase"}}>{val.name}</div>

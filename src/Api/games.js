@@ -36,6 +36,13 @@ const data =
             "image":"/STUMBLE.jpg",
             "description":"Nothing Special"
         }
+        ,
+        {
+            "id":"6",
+            "name":"stumble guys",
+            "image":"/STUMBLE.jpg",
+            "description":"Nothing Special"
+        }
     ];
 
 
