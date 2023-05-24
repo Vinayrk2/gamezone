@@ -1,12 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import { getGame } from '../Api/games';
 
 export default function GamePage() {
+    
+  const [game, setGame] = useState({})
+
+  useEffect(()=>{
+    var query = window.location.href.split('?')[1].split('=')[1];
+    query = query ? query : 1;
+    setGame(getGame(query));
+
+  },[])
+
+
   return (
     <>
-      <div className="container-fluid" style={{ "margin-top": "60px" }}>
+      <div className="container-fluid" style={{ "marginTop": "60px" }}>
         <div className="row py-5 justify-content-center">
           <div className="col-4">
-            <img src="/PUBG.jpg" alt="Error" height="200px" width="40px" />
+            <img src={game.image} alt="Error" height="200px" width="40px" />
           </div>
         </div>
         <div className="row justify-content-center">
@@ -14,31 +26,31 @@ export default function GamePage() {
             <table className="table text-white">
               <tbody>
                 <tr className="text-center">
-                  <td colspan="2">GAME DETAILS</td>
+                  <td colSpan="2">GAME DETAILS</td>
                 </tr>
                 <tr>
                   <td className=''>NAME</td>
-                  <td>PLAYERS UNKNOWN BATTLEGROUND</td>
+                  <td>{game.name ? game.name.toUpperCase() : game.name}</td>
                 </tr>
 
                 <tr>
                   <td>OWNED BY</td>
-                  <td>TENCENT COOPERATIVE LIMITED</td>
+                  <td>{game.owner?game.owner.toUpperCase():"No data available"}</td>
                 </tr>
 
                 <tr>
                   <td>TYPE</td>
-                  <td>MULTIPLAYER GAME</td>
+                  <td>{game.type}</td>
                 </tr>
 
                 <tr>
                   <td>OS SUPPORT</td>
-                  <td>LINUX,WINDOWS,MAC</td>
+                  <td>{game.os}</td>
                 </tr>
 
                 <tr>
                   <td>DOWNLOAD SIZE</td>
-                  <td rowspan="2">1.5 GB&nbsp; <a href="">[MOBILE]</a><br></br> 4.0 GB&nbsp; <a href="">[DESKTOP]</a> </td>
+                  <td rowSpan="2">1.5 GB&nbsp; <a href="">[MOBILE]</a><br></br> 2gb &nbsp; <a href="">[DESKTOP]</a> </td>
                 </tr>
               </tbody>
             </table>
@@ -50,7 +62,7 @@ export default function GamePage() {
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <iframe width="560" height="400" src="https://www.youtube.com/embed/uCd6tbUAy6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="d-block w-100"></iframe>
+              <iframe width="560" height="400" src="https://www.youtube.com/embed/uCd6tbUAy6o" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className="d-block w-100"></iframe>
             </div>
             <div className="carousel-item">
               <img src="pubg-2.jpg" className="d-block w-100" alt="" height="400px" />
@@ -70,11 +82,11 @@ export default function GamePage() {
         </div>
       </div>
 
-      <div className="container bg-info" style={{ "margin-top": "100px"}} id="#download-id">
+      <div className="container bg-info" style={{ "marginTop": "100px"}} id="#download-id">
         <div className="row py-4">
           <div className="col-4 offset-2">
             <h4>DOWNLOAD FOR DESKTOP</h4>
-            <table className="table" style={{"font-size":"22px"}}>
+            <table className="table" style={{"fontSize":"22px"}}>
               <tbody>
                 <tr>
                   <td>LINUX</td>
@@ -94,7 +106,7 @@ export default function GamePage() {
           </div>
           <div className="col-4 offset-1">
             <h4>DOWNLOAD FOR MOBILE</h4>
-            <table className="table" style={{"font-size":"22px"}}>
+            <table className="table" style={{"fontSize":"22px"}}>
               <tbody>
               <tr>
                   <td>LINUX</td>
