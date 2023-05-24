@@ -70,7 +70,7 @@ export default function GamePage() {
         </div>
       </div>
 
-      <div className="container bg-info" style={{ "margin-top": "100px" }}>
+      <div className="container bg-info" style={{ "margin-top": "100px"}} id="#download-id">
         <div className="row py-4">
           <div className="col-4 offset-2">
             <h4>DOWNLOAD FOR DESKTOP</h4>
