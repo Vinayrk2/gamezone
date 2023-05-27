@@ -7,7 +7,7 @@ export default function Header() {
     <>
       {/* <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
 
-        <Link className="navbar-brand" to="/"><img src="header-logo.jpg" class="ml-3" width="60px" height="50px" /></Link >
+        <Link className="navbar-brand" to="/"><img src="header-logo.jpg" className="ml-3" width="60px" height="50px" /></Link >
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -18,24 +18,24 @@ export default function Header() {
             <Link className="nav-link" to="/Linkbout">About us</Link >
           </div>
         </div> */}
-       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <Link to="#" class="navbar-brand">
+       <nav className="navbar navbar-expand-md navbar-dark bg-dark">
+        <Link to="#" className="navbar-brand">
           <img src="/header-logo.jpg" alt="" className="" height="60px" width="60px"/></Link>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
-            <span class="navbar-toggler-icon"></span>
+        <button className="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+            <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item"><Link to="/" class="nav-link">Home</Link></li>
-                <li class="nav-item dropdown"><Link to="" class="nav-link dropdown-toggle"
+        <div className="collapse navbar-collapse" id="mynavbar">
+            <ul className="navbar-nav">
+                <li className="nav-item"><Link to="/" className="nav-link">Home</Link></li>
+                <li className="nav-item dropdown"><Link to="" className="nav-link dropdown-toggle"
                         data-toggle="dropdown">Games</Link>
-                    <div class="dropdown-menu">
-                        <Link to="" class="dropdown-item">PC Games</Link>
-                        <Link to="" class="dropdown-item">Mobile Games</Link>
+                    <div className="dropdown-menu">
+                        <Link to="" className="dropdown-item">PC Games</Link>
+                        <Link to="" className="dropdown-item">Mobile Games</Link>
                     </div>
                 </li>
-                <li class="nav-item"><Link to="/about" class="nav-link">About Us</Link></li>
+                <li className="nav-item"><Link to="/about" className="nav-link">About Us</Link></li>
             </ul>
            
         </div>

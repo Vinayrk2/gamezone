@@ -8,7 +8,9 @@ const data =
             "owner":"tencent",
             "type":"battleground",
             "os":"Android",
-            "size":"4GB"
+            "size":"4GB",
+            
+                link: "https://gsf-sp.softonic.com/44f/d47/6c13dd82280a963c5d749538ac5c37db03/Garena_Free_Fire_v1.98.1.apk?signature=8f689f672221ca37beacc094b6eb5732&expires=1685223201&url=https%3A%2F%2Ffree-fire-battlegrounds.en.softonic.com%2Fandroid&filename=Garena_Free_Fire_v1.98.1.apk"
         },
         {
             "id":"2",
@@ -18,7 +20,8 @@ const data =
             "owner":"Infinity Ward",
             "type":"battleground - multiplayer",
             "os":"Android",
-            "size":"2.5GB"
+            "size":"2.5GB",
+            link: "https://gsf-sp.softonic.com/44f/d47/6c13dd82280a963c5d749538ac5c37db03/Garena_Free_Fire_v1.98.1.apk?signature=8f689f672221ca37beacc094b6eb5732&expires=1685223201&url=https%3A%2F%2Ffree-fire-battlegrounds.en.softonic.com%2Fandroid&filename=Garena_Free_Fire_v1.98.1.apk"
         },
         {
             "id":"3",
@@ -28,7 +31,8 @@ const data =
             "owner":"Garena",
             "type":"battleroyale",
             "os":"Android",
-            "size":"650MB"
+            "size":"650MB",
+            link: "https://gsf-sp.softonic.com/44f/d47/6c13dd82280a963c5d749538ac5c37db03/Garena_Free_Fire_v1.98.1.apk?signature=8f689f672221ca37beacc094b6eb5732&expires=1685223201&url=https%3A%2F%2Ffree-fire-battlegrounds.en.softonic.com%2Fandroid&filename=Garena_Free_Fire_v1.98.1.apk"
         },
         {
             "id":"4",
@@ -38,7 +42,9 @@ const data =
             "owner":"Riot Games",
             "type":"battleroyale - arena",
             "os":"Windows",
-            "size":"10GB"
+            "size":"10GB",
+                link: "https://gsf-sp.softonic.com/44f/d47/6c13dd82280a963c5d749538ac5c37db03/Garena_Free_Fire_v1.98.1.apk?signature=8f689f672221ca37beacc094b6eb5732&expires=1685223201&url=https%3A%2F%2Ffree-fire-battlegrounds.en.softonic.com%2Fandroid&filename=Garena_Free_Fire_v1.98.1.apk"
+
         },
         {
             "id":"5",
@@ -48,7 +54,10 @@ const data =
             "owner":"Rockstar Games",
             "type":"openworld - multiplayer also",
             "os":"PlayStation 5, Xbox 360, Microsoft Windows",
-            "size":"20GB"
+            "size":"20GB",
+            
+                link: "https://gsf-sp.softonic.com/44f/d47/6c13dd82280a963c5d749538ac5c37db03/Garena_Free_Fire_v1.98.1.apk?signature=8f689f672221ca37beacc094b6eb5732&expires=1685223201&url=https%3A%2F%2Ffree-fire-battlegrounds.en.softonic.com%2Fandroid&filename=Garena_Free_Fire_v1.98.1.apk"
+            
         },
         {
             "id":"6",
@@ -58,7 +67,10 @@ const data =
             "owner":"Kitka Games",
             "type":"Casual multiplayer",
             "os":"Android, iOS, Microsoft Windows",
-            "size":"156MB"
+            "size":"156MB",
+            
+                link: "https://gsf-sp.softonic.com/44f/d47/6c13dd82280a963c5d749538ac5c37db03/Garena_Free_Fire_v1.98.1.apk?signature=8f689f672221ca37beacc094b6eb5732&expires=1685223201&url=https%3A%2F%2Ffree-fire-battlegrounds.en.softonic.com%2Fandroid&filename=Garena_Free_Fire_v1.98.1.apk"
+            
         }
         ,
         {
@@ -69,7 +81,10 @@ const data =
             "owner":"tencent",
             "type":"Casual multiplayer",
             "os":"Android",
-            "size":"2gb"
+            "size":"2gb",
+            
+                link: "https://gsf-sp.softonic.com/44f/d47/6c13dd82280a963c5d749538ac5c37db03/Garena_Free_Fire_v1.98.1.apk?signature=8f689f672221ca37beacc094b6eb5732&expires=1685223201&url=https%3A%2F%2Ffree-fire-battlegrounds.en.softonic.com%2Fandroid&filename=Garena_Free_Fire_v1.98.1.apk"
+            
         }
     ];
 

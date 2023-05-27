@@ -16,10 +16,10 @@ export default function GamePage() {
   return (
     <>
    
-      <div className="container-fluid" style={{ "margin-top": "60px" }}>
+      <div className="container-fluid" style={{ "marginTop": "60px" }}>
         <div className="row py-5 justify-content-center">
-          <div className="col-12">
-            <img className="img-fluid" src="/PUBG.jpg" alt="Error" height="200px" width="40px" />
+          <div className="col-6">
+            <img className="img-fluid" src={game.image} alt="Error" />
           </div>
         </div>
         <div className="row justify-content-center">
@@ -58,34 +58,34 @@ export default function GamePage() {
           </div>
         </div>
       </div>
-      <div class="carousel slide carousel-fade" data-ride="carousel" id="myCarousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <div className="carousel slide carousel-fade" data-ride="carousel" id="myCarousel">
+        <ol className="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-interval="2000">
-            <img src="image1.jpg" class="d-block w-100 img-fluid" alt="" height="450px"/>
+        <div className="carousel-inner">
+          <div className="carousel-item active" data-interval="2000">
+            <img src="image1.jpg" className="d-block w-100 img-fluid" alt="" height="450px"/>
 
           </div>
-          <div class="carousel-item" data-interval="2000">
-            <img src="image2.jpg" class="d-block w-100 img-fluid" alt="" height="450px"/>
+          <div className="carousel-item" data-interval="2000">
+            <img src="image2.jpg" className="d-block w-100 img-fluid" alt="" height="450px"/>
           </div>
 
-          <div class="carousel-item" data-interval="2000">
-            <img src="image3.jpg" class="d-block w-100 img-fluid" alt="" height="450px"/>
+          <div className="carousel-item" data-interval="2000">
+            <img src="image3.jpg" className="d-block w-100 img-fluid" alt="" height="450px"/>
           </div>
         </div>
-        <a href="#myCarousel" class="carousel-control-prev" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
+        <a href="#myCarousel" className="carousel-control-prev" data-slide="prev">
+          <span className="carousel-control-prev-icon"></span>
         </a>
-        <a href="#myCarousel" class="carousel-control-next" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
+        <a href="#myCarousel" className="carousel-control-next" data-slide="next">
+          <span className="carousel-control-next-icon"></span>
         </a>
       </div>
 
-      <div className="container-sm-fluid bg-info" style={{ "margin-top": "100px", "background-Color": "#FFAEBC" }}>
+      <div className="container-sm-fluid bg-info" style={{ "marginTop": "100px", "backgroundColor": "#FFAEBC" }}>
         <div className="row py-4 justify-content-around">
           <div className="col-sm-4">
             <h4>DOWNLOAD FOR DESKTOP</h4>
@@ -113,9 +113,9 @@ export default function GamePage() {
               <tbody>
                 <tr>
                   <td>LINUX</td>
-                  <td><button className="btn btn-success btn-sm" type='submit' >Download [2.5 GB]</button></td>
+                  <td><a href={ game.link ? game.link : "/sbx"}><button className="btn btn-success btn-sm" type='submit' >Download [2.5 GB]</button></a></td>
+                  
                 </tr>
-
               </tbody>
             </table>
           </div>
