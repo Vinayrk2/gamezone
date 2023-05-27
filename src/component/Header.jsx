@@ -18,12 +18,27 @@ export default function Header() {
             <Link className="nav-link" to="/Linkbout">About us</Link >
           </div>
         </div> */}
-       <nav className="navbar justify-content-start sticky-top" style={{ "backgroundColor": "#000C66" }}>
-       <Link to="/" className="nav-link"><img src="header-logo.jpg" className="ml-3" width="60px" height="50px" /></Link>
-         <Link to="#" className="nav-link text-white">GAMES</Link>
-         <Link to="/profile" className="nav-link text-white"> PROFILE </Link>
-         <Link to="/about" className="nav-link text-white">ABOUT US</Link>
-       </nav>
+       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">GAME ZONE</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="" class="nav-link">Games</a></li>
+                <li class="nav-item dropdown"><a href="" class="nav-link dropdown-toggle"
+                        data-toggle="dropdown">Games</a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item">PC</a>
+                        <a href="" class="dropdown-item">Mobile</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="" class="nav-link">Games</a></li>
+            </ul>
+           
+        </div>
+    </nav>
       <Outlet />
       </>
   )
