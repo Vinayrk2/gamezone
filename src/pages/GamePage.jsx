@@ -18,7 +18,7 @@ export default function GamePage() {
    
       <div className="container-fluid" style={{ "margin-top": "60px" }}>
         <div className="row py-5 justify-content-center">
-          <div className="col-8">
+          <div className="col-12">
             <img className="img-fluid" src="/PUBG.jpg" alt="Error" height="200px" width="40px" />
           </div>
         </div>
