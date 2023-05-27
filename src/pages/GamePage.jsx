@@ -18,7 +18,7 @@ export default function GamePage() {
    
       <div className="container-fluid" style={{ "margin-top": "60px" }}>
         <div className="row py-5 justify-content-center">
-          <div className="col-4">
+          <div className="col-8">
             <img className="img-fluid" src="/PUBG.jpg" alt="Error" height="200px" width="40px" />
           </div>
         </div>
@@ -58,7 +58,6 @@ export default function GamePage() {
           </div>
         </div>
       </div>
- <div className="container mt-4">
       <div class="carousel slide carousel-fade" data-ride="carousel" id="myCarousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -85,7 +84,6 @@ export default function GamePage() {
           <span class="carousel-control-next-icon"></span>
         </a>
       </div>
-    </div>  
 
       <div className="container-sm-fluid bg-info" style={{ "margin-top": "100px", "background-Color": "#FFAEBC" }}>
         <div className="row py-4 justify-content-around">
