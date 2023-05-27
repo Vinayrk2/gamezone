@@ -18,7 +18,7 @@ export default function Card() {
             <div className="card-title text-center" style={{"textTransform":"uppercase"}}>{val.name}</div>
             <div className="card-text">{val.description}</div>
           </div>
-          <Link to={"/gamepage?game="+val.name}><input type="submit" className="form-control bg-primary text-white mb-2" value="Submit"/></Link>
+          <Link to={"/gamepage?game="+val.id}><input type="submit" className="form-control bg-primary text-white mb-2" value="Submit"/></Link>
 
         </div>
         
