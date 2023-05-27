@@ -19,22 +19,23 @@ export default function Header() {
           </div>
         </div> */}
        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a href="#" class="navbar-brand">GAME ZONE</a>
+        <Link to="#" class="navbar-brand">
+          <img src="/header-logo.jpg" alt="" className="" height="60px" width="60px"/></Link>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="mynavbar">
             <ul class="navbar-nav">
-                <li class="nav-item"><a href="" class="nav-link">Games</a></li>
-                <li class="nav-item dropdown"><a href="" class="nav-link dropdown-toggle"
-                        data-toggle="dropdown">Games</a>
+                <li class="nav-item"><Link to="/" class="nav-link">Home</Link></li>
+                <li class="nav-item dropdown"><Link to="" class="nav-link dropdown-toggle"
+                        data-toggle="dropdown">Games</Link>
                     <div class="dropdown-menu">
-                        <a href="" class="dropdown-item">PC</a>
-                        <a href="" class="dropdown-item">Mobile</a>
+                        <Link to="" class="dropdown-item">PC Games</Link>
+                        <Link to="" class="dropdown-item">Mobile Games</Link>
                     </div>
                 </li>
-                <li class="nav-item"><a href="" class="nav-link">Games</a></li>
+                <li class="nav-item"><Link to="/about" class="nav-link">About Us</Link></li>
             </ul>
            
         </div>
