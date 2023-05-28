@@ -29,7 +29,7 @@ export default function Header() {
             <ul className="navbar-nav">
                 <li className="nav-item"><Link to="/" className="nav-link">Home</Link></li>
                 <li className="nav-item dropdown"><Link to="" className="nav-link dropdown-toggle"
-                        data-toggle="dropdown">Games</Link>
+                        data-toggle="dropdown"> Games </Link>
                     <div className="dropdown-menu">
                         <Link to="" className="dropdown-item">PC Games</Link>
                         <Link to="" className="dropdown-item">Mobile Games</Link>

@@ -9,6 +9,7 @@ import Review from './pages/Review';
 import Footer from './component/Footer';
 import './App.css';
 import GamePage from './pages/GamePage';
+import Login from './pages/Login';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path='/' element={<Header />}>
           <Route index element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/login' element={<Login />} />
           <Route path='/gamepage' element={<GamePage />} />  
           <Route path='profile' element={<Profile />} />
           <Route path='/contact' element={<Contact />} >
