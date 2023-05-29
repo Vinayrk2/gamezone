@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Card from '../component/Card';
 
-export default function Home() {
+
+export default function Home({query}) {
+ 
+
   return (
 <>
-    
-    <Card />
+    <Card query={query}/>
 </>
   )
 }

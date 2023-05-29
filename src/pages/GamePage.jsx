@@ -93,16 +93,16 @@ export default function GamePage() {
               <tbody>
                 <tr>
                   <td>LINUX</td>
-                  <td><button className="btn btn-success btn-sm" type='submit' >Download [2.5 GB]</button></td>
+                  <td><a href={game.image} download={"download"}><button className="btn btn-success btn-sm" type='submit' >Download [2.5 GB]</button></a></td>
                 </tr>
                 <tr>
                   <td>WINDOWS</td>
-                  <td><button className="btn btn-success btn-sm" type='submit'>Download [1.5 GB]</button></td>
+                  <td><a href={game.image} download={"download"}><button className="btn btn-success btn-sm" type='submit' >Download [2.5 GB]</button></a></td>
 
                 </tr>
                 <tr>
                   <td>MAC OS</td>
-                  <td><button className="btn btn-success btn-sm" type='submit'>Download [2.0 GB]</button></td>
+                  <td><a href={game.image} download={"download"}><button className="btn btn-success btn-sm" type='submit' >Download [2.5 GB]</button></a></td>
                 </tr>
               </tbody>
             </table>
@@ -113,7 +113,8 @@ export default function GamePage() {
               <tbody>
                 <tr>
                   <td>LINUX</td>
-                  <td><a href={ game.link ? game.link : "/sbx"}><button className="btn btn-success btn-sm" type='submit' >Download [2.5 GB]</button></a></td>
+                  {/* <td><a href={ game.link ? game.link : "/sbx"}><button className="btn btn-success btn-sm" type='submit' >Download [2.5 GB]</button></a></td> */}
+                  <td><a href={game.image} download={"download"}><button className="btn btn-success btn-sm" type='submit' >Download [2.5 GB]</button></a></td>
                   
                 </tr>
               </tbody>

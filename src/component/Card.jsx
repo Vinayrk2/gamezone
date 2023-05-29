@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import data from '../Api/games'
-export default function Card() {
-
+export default function Card({query}) {
+  // const query = "mobile";
+  console.log(query.category)
 
   return (
     <>
      <div className="row justify-content-around mt-3">
     {
-      data.map((val)=>{
+      data.filter((val)=>val.device.includes(query.category)).map((val)=>{
         
         return (
           

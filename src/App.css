@@ -47,5 +47,8 @@ body{
   background-color:#004369;
   color: white;
 }
+.radios{
+  display: none;
+}
 
 
