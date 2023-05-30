@@ -43,6 +43,8 @@ function getUser(){
         }
         $conn->close();
     }
+
+    //Login Code
     else if($email != "" and $password != ""){
         $conn = getConnection();
         $query = "select `name`,`lastname`,`email` from `users` where `EMAIL` = '$email' && `PASSWORD` = '$password'";
@@ -60,6 +62,19 @@ function getUser(){
             $user->res = 0;
         }
         echo json_encode($user);
+        $conn->close();
+    }
+
+    //Update Profile Code
+    else if($email != "" and $name != "" and $lastname != ""){
+        $conn = getConnection();
+        $query = "UPDATE `users` SET `NAME`='$name',`LASTNAME`='$lastname' WHERE `EMAIL` = '$email'";
+        $result = $conn->query($query);
+        
+        if($result)
+        echo "Updated Successfully";
+        else 
+        echo "Failed To Update";
         $conn->close();
     }
 ?>

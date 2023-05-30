@@ -28,7 +28,8 @@ export default function Login({setUser}) {
         return false;
       }else{
         console.log(res);
-        sessionStorage.setItem("user",JSON.stringify(res));
+        delete res.res;
+        sessionStorage.setItem("user",JSON.stringify({...res}));
         setUser(res);
         navigate("/");
       }

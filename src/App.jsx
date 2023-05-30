@@ -35,7 +35,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/login' element={<Login setUser={setUser}/>} />
           <Route path='/gamepage' element={<GamePage />} />  
-          <Route path='/profile' element={<Profile />} />
+          <Route path='/profile' element={<Profile user={user} setUser={setUser}/>} />
           <Route path='/contact' element={<Contact />} >
             <Route path='review' element={<Review />}/>
           </Route>

@@ -33,7 +33,7 @@ export default function Header({setQuery}) {
                   !user.name && <li className="nav-item"><Link to="/login" className="nav-link"> Login </Link></li>
                 }
                 {
-                  user.name && <li className="nav-item nav-link"> { user.name + user.lastname}</li>
+                  user.name && <Link to="/profile"><li className="nav-item nav-link"> { user.name + user.lastname}</li></Link>
                 }
                 
                 
