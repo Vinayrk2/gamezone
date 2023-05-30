@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import data from '../Api/games'
 export default function Card({query}) {
   // const query = "mobile";
-  console.log(query.category)
+  // console.log(query.category)
 
   return (
     <>

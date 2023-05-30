@@ -10,14 +10,20 @@ import Footer from './component/Footer';
 import './App.css';
 import GamePage from './pages/GamePage';
 import Login from './pages/Login';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { UserContext } from './component/Context';
 import { useSearchParams } from 'react-router-dom';
 
 function App() {
 
   const [user, setUser] = useState({});
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState({category:""});
+
+  useEffect(()=>{
+    if(sessionStorage.getItem("user")){
+      setUser(JSON.parse(sessionStorage.getItem("user")))
+    }
+  },[])
 
   return (
     <>
@@ -29,7 +35,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/login' element={<Login setUser={setUser}/>} />
           <Route path='/gamepage' element={<GamePage />} />  
-          <Route path='profile' element={<Profile />} />
+          <Route path='/profile' element={<Profile />} />
           <Route path='/contact' element={<Contact />} >
             <Route path='review' element={<Review />}/>
           </Route>
