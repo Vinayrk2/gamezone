@@ -20,7 +20,7 @@ export default function Profile({user, setUser}) {
     const updatedUser = {...tempUserInfo, [e.target.name] : e.target.value};
     setTempUserInfo({...updatedUser});
   }
-
+  // 192.168.0.103
   function submitChange(){
     $.post("http://192.168.0.103:8080/GameZone/gamezone/src/Backend/db.php",tempUserInfo,(res)=>{
       res = JSON.parse(res);
