@@ -32,7 +32,10 @@
     animation: logo-spin infinite 20s linear;
   }
 } */
-
+*{
+  margin: 0;
+  padding: 0;
+}
 .card {
   /* padding: 2em; */
   width:400px;
@@ -51,4 +54,26 @@ body{
   display: none;
 }
 
+/* 
+.main-container{
+  height:85vh;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 
+.btnContainer button{
+  width:120px;
+  margin:5px;
+}
+
+.heading{
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: x-large ;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family:sans-serif;
+}

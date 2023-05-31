@@ -36,10 +36,15 @@ function getUser(){
         
         if($result){
             $user = getUser();
+            $user->message = "Account Created Successfully !!";
+            $user->res = 1;
             echo json_encode($user);
         }
         else{
-            echo json_encode('User Already Exists');
+            $user = new stdClass();
+            $user->message = "Couldn't create an account !!";
+            $user->res = 0;
+            echo json_encode($user);
         }
         $conn->close();
     }
@@ -56,10 +61,13 @@ function getUser(){
         
         if($result)
             $user = getUser();
+            $user->message = "Logged in successfully";
+            $user->res = 1;
         }
         else{
             $user = new stdClass();
             $user->res = 0;
+            $user->message = "User Does Not Exists";
         }
         echo json_encode($user);
         $conn->close();
@@ -70,11 +78,14 @@ function getUser(){
         $conn = getConnection();
         $query = "UPDATE `users` SET `NAME`='$name',`LASTNAME`='$lastname' WHERE `EMAIL` = '$email'";
         $result = $conn->query($query);
-        
+        $user = new stdClass();
+
         if($result)
-        echo "Updated Successfully";
+        $user->message =  "Updated Successfully";
         else 
-        echo "Failed To Update";
+        $user->message =  "Failed To Update";
+
+        echo json_encode($user);
         $conn->close();
     }
 ?>

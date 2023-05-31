@@ -4,23 +4,28 @@ import data from '../Api/games'
 export default function Card({query}) {
   // const query = "mobile";
   // console.log(query.category)
-
+  
+  
   return (
     <>
      <div className="row justify-content-around mt-3">
     {
       data.filter((val)=>val.device.includes(query.category)).map((val)=>{
-        
+        console.log(val.os);
         return (
           
         <div className="card col-md-4 mt-4" key={val.id} >
           <img src={val.image} alt="" className="card-img-top mt-2 w-100" height="250px"/>
           <div className="card-body">
             <div className="card-title text-center" style={{"textTransform":"uppercase"}}>{val.name}</div>
-            <div className="card-text">{val.description}</div>
+            <div className="card-text">{val.description}<br />
+            {
+              val.os.includes(navigator.userAgentData.platform) && <span style={{"color":"lightgreen"}}> This Game can be installed on this device.</span>
+            }
+            </div>
           </div>
-          <Link to={"/gamepage?game="+val.id}><input type="submit" className="form-control bg-primary text-white mb-2" value="Submit"/></Link>
-
+          <Link to={"/gamepage?game="+val.id}><input type="submit" className="form-control bg-primary text-white mb-2" value="See More"/></Link>
+          
         </div>
         
         )
