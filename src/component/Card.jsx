@@ -17,11 +17,11 @@ export default function Card({query}) {
           <img src={val.image} alt="" className="card-img-top mt-2 w-100" height="250px"/>
           <div className="card-body">
             <div className="card-title text-center" style={{"textTransform":"uppercase"}}>{val.name}</div>
-            <div className="card-text">{val.description}<br />
             {
               val.os.split(",").findIndex((os)=>navigator.userAgent.includes(os.trim())) == -1? "": 
               <span style={{"color":"lightgreen"}}> This Game can be installed on this device.</span>
             }
+            <div className="card-text">{val.description.substring(0,90)}...<br />
             </div>
           </div>
           <Link to={"/gamepage?game="+val.id}><input type="submit" className="form-control bg-primary text-white mb-2" value="See More"/></Link>
