@@ -57,7 +57,7 @@ const data =
             "owner":"Rockstar Games",
             "type":"openworld - multiplayer also",
             "device": "pc",
-            "os":"PlayStation 5, Xbox 360, Microsoft Windows",
+            "os":"PlayStation 5, Xbox 360,  Windows",
             "size":"20GB",
             
                 link: "https://gsf-sp.softonic.com/44f/d47/6c13dd82280a963c5d749538ac5c37db03/Garena_Free_Fire_v1.98.1.apk?signature=8f689f672221ca37beacc094b6eb5732&expires=1685223201&url=https%3A%2F%2Ffree-fire-battlegrounds.en.softonic.com%2Fandroid&filename=Garena_Free_Fire_v1.98.1.apk"
@@ -71,7 +71,7 @@ const data =
             "owner":"Kitka Games",
             "type":"Casual multiplayer",
             "device": "mobile",
-            "os":"Android, iOS, Microsoft Windows",
+            "os":"Android, iOS, Windows",
             "size":"156MB",
             
                 link: "https://gsf-sp.softonic.com/44f/d47/6c13dd82280a963c5d749538ac5c37db03/Garena_Free_Fire_v1.98.1.apk?signature=8f689f672221ca37beacc094b6eb5732&expires=1685223201&url=https%3A%2F%2Ffree-fire-battlegrounds.en.softonic.com%2Fandroid&filename=Garena_Free_Fire_v1.98.1.apk"

@@ -43,7 +43,7 @@ export default function Login({setUser}) {
      }
     }
         
-    $.post("http://localhost:80/GameZone/gamezone/src/Backend/db.php",formData,(res)=>{
+    $.post("http://192.168.0.103:8080/GameZone/gamezone/src/Backend/db.php",formData,(res)=>{
       res = JSON.parse(res);
 
     if(res.res == 0 ){

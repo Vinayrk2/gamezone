@@ -22,7 +22,7 @@ export default function Profile({user, setUser}) {
   }
 
   function submitChange(){
-    $.post("http://localhost:80/GameZone/gamezone/src/Backend/db.php",tempUserInfo,(res)=>{
+    $.post("http://192.168.0.103:8080/GameZone/gamezone/src/Backend/db.php",tempUserInfo,(res)=>{
       res = JSON.parse(res);
       setUser({...tempUserInfo});
       sessionStorage.setItem("user", JSON.stringify({...tempUserInfo}));

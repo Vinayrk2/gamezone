@@ -11,7 +11,6 @@ export default function Card({query}) {
      <div className="row justify-content-around mt-3">
     {
       data.filter((val)=>val.device.includes(query.category)).map((val)=>{
-        console.log(val.os);
         return (
           
         <div className="card col-md-4 mt-4" key={val.id} >
@@ -20,7 +19,8 @@ export default function Card({query}) {
             <div className="card-title text-center" style={{"textTransform":"uppercase"}}>{val.name}</div>
             <div className="card-text">{val.description}<br />
             {
-              val.os.includes(navigator.userAgentData.platform) && <span style={{"color":"lightgreen"}}> This Game can be installed on this device.</span>
+              val.os.split(",").findIndex((os)=>navigator.userAgent.includes(os.trim())) == -1? "": 
+              <span style={{"color":"lightgreen"}}> This Game can be installed on this device.</span>
             }
             </div>
           </div>
